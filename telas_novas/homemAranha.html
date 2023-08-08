@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>O miranha</title>
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="assets/logo-spider.png" style="position: relative; top: -25px" width="300"></a>
+		<div style="position:relative; left: 770px; bottom: 75px; width: 75px;" class="toggle"><a href="../tela_feed/index.html"><img src="assets/back.png"></a></div>
+		<div class="toggle"><img src="assets/toggle.png" style="opacity: 0%;"></div>
+	</header>
+	<div class="banner" style="background: url(assets/bg-spider.jpg);">
+		<div class="content">
+			<h2 style="width: 1000px"> A jornada do <span>Multiverso</span> Começa aqui </h2>
+			<p style="color: white; position: relative; top: 15px" >Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências da sua identidade como aracnídeo ter sido revelada pela reportagem do Clarim Diário. Incapaz de separar sua vida normal das aventuras de ser um super-herói, Parker pede ao Doutor Estranho (Benedict Cumberbatch) para que todos esqueçam sua verdeira identidade. Entretanto, o feitiço não sai como planejado e a situação torna-se ainda mais perigosa, forçando-o a descobrir o que realmente significa ser o Homem-Aranha. </p>
+			<a style="position: relative; top: 35px" href="#" class="play" onclick="toggle();"><img src="assets/play.png">Watch Trailer</a>
+			<div class="slidespider"></div>
+			<ul class="sci">
+				<li><a href="#"><img src="assets/face.png"></a></li>
+				<li><a href="#"><img src="assets/tt.png"></a></li>
+				<li><a href="https://www.instagram.com/sessaocinemaofc/"><img src="assets/insta.png"></a></li>
+			</ul>			
+		</div>
+	</div>
+	<div class="trailer">
+		<video src="assets/traileraranha.mp4" controls="true"></video>
+		<img src="assets/close.png" class="close" onclick="toggle();">
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var trailer = document.querySelector ('.trailer');
+			var video = document.querySelector ('trailer');
+			trailer.classList.toggle('active');
+			video.pause();
+
+
+
+		}
+	</script>
+</body>
+</html>

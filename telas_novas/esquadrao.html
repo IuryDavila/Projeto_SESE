@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Arlequina e os outros</title>
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="assets/logo-esquadrao.png" style="position: relative; top: -25px" width="300"></a>
+		<div style="position:relative; left: 770px; bottom: 75px; width: 75px;" class="toggle"><a href="../tela_feed/index.html"><img src="assets/back.png"></a></div>
+		<div class="toggle"><img src="assets/toggle.png" style="opacity: 0%;"></div>
+	</header>
+	<div class="banner" style="background: url(assets/bg-esquadrao.jpg);">
+		<div class="content">
+			<h2 style="width: 1000px"> Vilões? Hérois? Não, não. Eles só são <span>loucos</span> para salvar o mundo </h2>
+			<p style="color: white; position: relative; top: 15px" >Liderados por Sanguinário (Idris Elba), Pacificador (John Cena), Coronel Rick Flag (Joel Kinnaman), e pela psicopata favorita de todos, Arlequina (Margot Robbie), o Esquadrão Suicida está disposto a fazer qualquer coisa para escapar da prisão. Armados até os dentes e rastreados pela equipe de Amanda Waller (Viola Davis), eles são jogados (literalmente) na remota ilha Corto Maltese, repleta de militantes adversários e forças de guerrilha. O grupo de supervilões busca destruição, mas basta um movimento errado para que acabem mortos. </p>
+			<a style="position: relative; top: 35px" href="#" class="play" onclick="toggle();"><img src="assets/play.png">Watch Trailer</a>
+			<div class="slideesquadrao"></div>
+			<ul class="sci">
+				<li><a href="#"><img src="assets/face.png"></a></li>
+				<li><a href="#"><img src="assets/tt.png"></a></li>
+				<li><a href="https://www.instagram.com/sessaocinemaofc/"><img src="assets/insta.png"></a></li>
+			</ul>			
+		</div>
+	</div>
+	<div class="trailer">
+		<video src="assets/traileresquadrao.mp4" controls="true"></video>
+		<img src="assets/close.png" class="close" onclick="toggle();">
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var trailer = document.querySelector ('.trailer');
+			var video = document.querySelector ('trailer');
+			trailer.classList.toggle('active');
+			video.pause();
+
+
+
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Une - Duna - tê</title>
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="assets/logo-duna.png" style="position: relative; top: -25px" width="300"></a>
+		<div style="position:relative; left: 770px; bottom: 75px; width: 75px;" class="toggle"><a href="../tela_feed/index.html"><img src="assets/back.png"></a></div>
+		<div class="toggle"><img src="assets/toggle.png" style="opacity: 0%;"></div>
+	</header>
+	<div class="banner" style="background: url(assets/bg-duna.jpg);">
+		<div class="content">
+			<h2 style="width: 1000px"> O classico de <span>Frank Herbert</span> Como você nunca viu antes... </h2>
+			<p style="color: white; position: relative; top: 15px" >Inspirado na série de livros de Frank Herbert, Duna se passa em um futuro longínquo. O Duque Leto Atreides administra o planeta desértico Arrakis, também conhecido como Duna, lugar de única fonte da substância rara chamada de "melange", usada para estender a vida humana, chegar a velocidade da luz e garantir poderes sobrehumanos. Para isso ele manda seu filho, Paul Atreides (Timothée Chalamet), um jovem brilhante e talentoso que nasceu para ter um grande destino além de sua imaginação, e seus servos e concubina Lady Jessica (Rebecca Fergunson), que também é uma Bene Gesserit. Eles vão para Duna, afim de garantir o futuro de sua família e seu povo. Porém, uma traição amarga pela posse da melange faz com que Paul e Jessica fujam para os Fremen, nativos do planeta que vivem nos cantos mais longes do deserto. </p>
+			<a style="position: relative; top: 35px" href="#" class="play" onclick="toggle();"><img src="assets/play.png">Watch Trailer</a>
+			<div class="slideduna"></div>
+			<ul class="sci">
+				<li><a href="#"><img src="assets/face.png"></a></li>
+				<li><a href="#"><img src="assets/tt.png"></a></li>
+				<li><a href="https://www.instagram.com/sessaocinemaofc/"><img src="assets/insta.png"></a></li>
+			</ul>			
+		</div>
+	</div>
+	<div class="trailer">
+		<video src="assets/trailerduna.mp4" controls="true"></video>
+		<img src="assets/close.png" class="close" onclick="toggle();">
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var trailer = document.querySelector ('.trailer');
+			var video = document.querySelector ('trailer');
+			trailer.classList.toggle('active');
+			video.pause();
+
+
+
+		}
+	</script>
+</body>
+</html>

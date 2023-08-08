@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Anjelina Jolie e os outros</title>
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="assets/logo-eternos.png" style="position: relative; top: -25px" width="300"></a>
+		<div style="position:relative; left: 770px; bottom: 75px; width: 75px;" class="toggle"><a href="../tela_feed/index.html"><img src="assets/back.png"></a></div>
+		<div class="toggle"><img src="assets/toggle.png" style="opacity: 0%;"></div>
+	</header>
+	<div class="banner" style="background: url(assets/bg-eternos.jpg);">
+		<div class="content">
+			<h2 style="width: 1000px"> Entre nessa jornada <span>mistica</span> com os maiores hérois da Marvel </h2>
+			<p style="color: white; position: relative; top: 15px" >Originários dos primeiros seres a terem habitado a Terra, Os Eternos fazem parte de uma raça modificada geneticamente pelos deuses espaciais conhecidos como Celestiais. Dotados de características como imortalidade e manipulação de energia cósmica, eles são frutos de experiências fracassadas de seus próprios criadores, que também foram responsáveis por gerar os Deviantes, seus principais inimigos. </p>
+			<a style="position: relative; top: 35px" href="#" class="play" onclick="toggle();"><img src="assets/play.png">Watch Trailer</a>
+			<div class="slideeternos"></div>
+			<ul class="sci">
+				<li><a href="#"><img src="assets/face.png"></a></li>
+				<li><a href="#"><img src="assets/tt.png"></a></li>
+				<li><a href="https://www.instagram.com/sessaocinemaofc/"><img src="assets/insta.png"></a></li>
+			</ul>			
+		</div>
+	</div>
+	<div class="trailer">
+		<video src="assets/trailereternos.mp4" controls="true"></video>
+		<img src="assets/close.png" class="close" onclick="toggle();">
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var trailer = document.querySelector ('.trailer');
+			var video = document.querySelector ('trailer');
+			trailer.classList.toggle('active');
+			video.pause();
+
+
+
+		}
+	</script>
+</body>
+</html>

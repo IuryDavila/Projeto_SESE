@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Black Windersson</title>
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="assets/logo-viuva.png" style="position: relative; top: -25px" width="300"></a>
+		<div style="position:relative; left: 770px; bottom: 75px; width: 75px;" class="toggle"><a href="../tela_feed/index.html"><img src="assets/back.png"></a></div>
+		<div class="toggle"><img src="assets/toggle.png" style="opacity: 0%;"></div>
+	</header>
+	<div class="banner" style="background: url(assets/bg-viuva.jpg);">
+		<div class="content">
+			<h2 style="width: 1000px"> A despedida que a <span>Agente Romanoff</span> sempre mereceu </h2>
+			<p style="color: white; position: relative; top: 15px" >Em Viúva Negra, acompanhamos a vida de Natasha Romanoff (Scarlett Johansson) após os eventos de Guerra Civil. Se escondendo do governo norte-americano devido a sua aliança com o time do Capitão América, Natasha ainda precisa confrontar partes de sua história quando surge uma conspiração perigosa ligada ao seu passado. Perseguida por uma força que não irá parar até derrotá-la, ela terá que lidar com sua antiga vida de espiã, e também reencontrar membros de sua família que deixou para trás antes de se tornar parte dos Vingadores. </p>
+			<a style="position: relative; top: 35px" href="#" class="play" onclick="toggle();"><img src="assets/play.png">Watch Trailer</a>
+			<div class="slideviuva"></div>
+			<ul class="sci">
+				<li><a href="#"><img src="assets/face.png"></a></li>
+				<li><a href="#"><img src="assets/tt.png"></a></li>
+				<li><a href="https://www.instagram.com/sessaocinemaofc/"><img src="assets/insta.png"></a></li>
+			</ul>			
+		</div>
+	</div>
+	<div class="trailer">
+		<video src="assets/trailerviuva.mp4" controls="true"></video>
+		<img src="assets/close.png" class="close" onclick="toggle();">
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var trailer = document.querySelector ('.trailer');
+			var video = document.querySelector ('trailer');
+			trailer.classList.toggle('active');
+			video.pause();
+
+
+
+		}
+	</script>
+</body>
+</html>

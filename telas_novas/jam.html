@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>O filme de 1996 é melhor</title>
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="assets/logo-jam.png" style="position: relative; top: -25px" width="300"></a>
+		<div style="position:relative; left: 770px; bottom: 75px; width: 75px;" class="toggle"><a href="../tela_feed/index.html"><img src="assets/back.png"></a></div>
+		<div class="toggle"><img src="assets/toggle.png" style="opacity: 0%;"></div>
+	</header>
+	<div class="banner" style="background: url(assets/bg-jam.jpg);">
+		<div class="content">
+			<h2 style="width: 1000px"> Eles voltaram e trouxeram o <span>Lebron James</span> dessa vez </h2>
+			<p style="color: white; position: relative; top: 15px" >Em Space Jam: Um Novo Legado, a inteligência artificial, Al G (Dom Cheadle) sequestra o filho de Lebron James e envia o lendário jogador dos Los Angeles Lakers para uma realidade paralela, onde vivem apenas os personagens de desenho animado da Warner Bros. Para resgatar o seu filho, ele precisará vencer uma partida épica de basquete contra superversões digitais das maiores estrelas da história da NBA e da WNBA. Para essa dura missão, King James terá a ajuda de Pernalonga, Patolino, Lola Bunny, dentre outros personagens consagrados de Looney Tunes. </p>
+			<a style="position: relative; top: 35px" href="#" class="play" onclick="toggle();"><img src="assets/play.png">Watch Trailer</a>
+			<div class="slidejam"></div>
+			<ul class="sci">
+				<li><a href="#"><img src="assets/face.png"></a></li>
+				<li><a href="#"><img src="assets/tt.png"></a></li>
+				<li><a href="https://www.instagram.com/sessaocinemaofc/"><img src="assets/insta.png"></a></li>
+			</ul>			
+		</div>
+	</div>
+	<div class="trailer">
+		<video src="assets/trailerjam.mp4" controls="true"></video>
+		<img src="assets/close.png" class="close" onclick="toggle();">
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var trailer = document.querySelector ('.trailer');
+			var video = document.querySelector ('trailer');
+			trailer.classList.toggle('active');
+			video.pause();
+
+
+
+		}
+	</script>
+</body>
+</html>
